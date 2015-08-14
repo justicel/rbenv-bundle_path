@@ -5,3 +5,5 @@ if ! [ -z "$BUNDLE_OVERRIDE_ROOT" ]; then
 else
   export BUNDLE_PATH=".bundle/ruby/$ruby_abi"
 fi
+
+export PATH="$BUNDLE_PATH/bin:$PATH"
